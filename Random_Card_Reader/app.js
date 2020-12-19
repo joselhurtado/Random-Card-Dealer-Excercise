@@ -1,9 +1,22 @@
-window.onload = function() {
-    console.log("Hello World")
-}
+window.onload = () => {
+    document.querySelector(".top-suit").classList.add(generateRandomSuit());
+    document.querySelector(".bottom-suit").classList.add(generateRandomSuit());
+    document.querySelector(".numbers").classList.add(generateRandomNumber());
+};
 
-document.querySelector(".top-left").innerHTML = "&#9824";
+let generateRandomNumber = () => {
+    let numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+    let indexNumbers = Math.floor(Math.random() * numbers.length);
 
-document.querySelector(".center").innerHTML = "5";
+    return numbers[indexNumbers];
 
-document.querySelector(".top-right").innerHTML = "&#9824";
+};
+
+let generateRandomSuit = () => {
+    let suits = ["diamonds", "spades", "heart", "club"];
+    let indexSuit = Math.floor(Math.random() * suit.length);
+
+    return suits[indexSuit];
+
+};
+
