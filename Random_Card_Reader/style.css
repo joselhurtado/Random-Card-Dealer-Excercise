@@ -1,0 +1,38 @@
+body {
+    background-color: #000 !important;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 25px;
+    display: inline-block;
+}
+
+.center {
+    align: center;
+    font-size: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.top-left {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.top-right {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
