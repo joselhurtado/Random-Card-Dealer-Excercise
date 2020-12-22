@@ -1,21 +1,21 @@
-window.onload = () => {
-    document.querySelector(".top-suit").classList.add(generateRandomSuit());
-    document.querySelector(".bottom-suit").classList.add(generateRandomSuit());
-    document.querySelector(".numbers").classList.add(generateRandomNumber());
+window.onload = function() {
+    document.querySelector(".top-suit").innerHTML = generateRandomSuit();
+    document.querySelector(".bottom-suit").innerHTML = generateRandomuit();
+    document.querySelector(".numbers").innerHTML = generateRandomNumber();
 };
 
-let generateRandomNumber = () => {
+function generateRandomNumber() {
     let numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
     let indexNumbers = Math.floor(Math.random() * numbers.length);
-
+    console.log(numbers[indexNumbers]);
     return numbers[indexNumbers];
 
 };
 
-let generateRandomSuit = () => {
+function generateRandomSuit() {
     let suits = ["diamonds", "spades", "heart", "club"];
-    let indexSuit = Math.floor(Math.random() * suit.length);
-
+    let indexSuit = Math.floor(Math.random() * suits.length);
+    console.log(suits[indexSuit]);
     return suits[indexSuit];
 
 };
