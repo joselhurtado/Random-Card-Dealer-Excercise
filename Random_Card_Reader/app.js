@@ -1,6 +1,6 @@
 window.onload = function() {
     document.querySelector(".top-suit").innerHTML = generateRandomSuit();
-    document.querySelector(".bottom-suit").innerHTML = generateRandomuit();
+    document.querySelector(".bottom-suit").innerHTML = generateRandomSuit();
     document.querySelector(".numbers").innerHTML = generateRandomNumber();
 };
 
@@ -13,7 +13,7 @@ function generateRandomNumber() {
 };
 
 function generateRandomSuit() {
-    let suits = ["diamonds", "spades", "heart", "club"];
+    let suits = ["&diams;", "&spades;", "&hearts;", "&clubs;"];
     let indexSuit = Math.floor(Math.random() * suits.length);
     console.log(suits[indexSuit]);
     return suits[indexSuit];
