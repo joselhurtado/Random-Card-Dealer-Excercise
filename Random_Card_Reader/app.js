@@ -4,7 +4,7 @@ window.onload = () => {
     let suits = ["&spades;", "&clubs;", "&hearts;", "&diams;"];
     return suits[Math.floor(Math.random() * suits.length)];
   }
-  
+
   function generateRandomNumber() {
       let numbers = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
     {
@@ -17,7 +17,7 @@ window.onload = () => {
     document.querySelector(".top-suit").style.color = "red";
     document.querySelector(".bottom-suit").style.color = "red";
     document.querySelector(".numbers").style.color = "red";
-  } else if (suits) {
+  } else if (design == "&spades;" || design == "&clubs;") {
     document.querySelector(".top-suit").style.color = "black";
     document.querySelector(".bottom-suit").style.color = "black";
     document.querySelector(".numbers").style.color = "black";
